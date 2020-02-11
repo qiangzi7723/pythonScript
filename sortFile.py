@@ -5,7 +5,9 @@ import os
 def dictionairy(key_value):
     new_kv = sorted(key_value.items(), key = lambda kv:(kv[1], kv[0]))
     for key in new_kv:
-        print("文件名称：%s 文件大小：%.2f MB"%(key[0],key[1]))
+        print("文件名称：%s \r"%(key[0]))
+        print("文件大小：%.2f MB"%(key[1]))
+        print("--------------")
 
 def get_FileSize(filePath):
     fsize = os.path.getsize(filePath)
