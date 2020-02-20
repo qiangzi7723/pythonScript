@@ -44,6 +44,6 @@ root = "/Users/zengzhiqiang/Desktop"
 # 输入文件夹名称
 target = "node_modules"
 # 最近30天修改过的文件夹 不删除node_modules
-days = 0
+days = 30
 auto_delete(root,target,days)
 
